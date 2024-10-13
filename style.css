@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a2a2c;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 124px;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#black-btn {
+  border: none;
+  background-color: #000;
+  border-radius: 25px;
+  width: 132px;
+  height: 132px;
+  position: absolute;
+  z-index: -5;
+  overflow: hidden;
+}
+
+#outline-btn {
+  border: none;
+  background-color: rgb(143 143 143);
+  border-radius: 21px;
+  width: 124px;
+  height: 122px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -4;
+}
+
+#case-btn {
+  border: none;
+  background-color: #565759;
+  border-radius: 18px;
+  width: 121px;
+  height: 118px;
+  position: absolute;
+  z-index: -3;
+  box-shadow: 0px 4px 2px 0px #026aff;
+  overflow: hidden;
+}
+
+#blutooth-icon {
+  width: 40px;
+  filter: drop-shadow(1px 1px 1px #a5a5a5);
+}
+
+#pop-btn {
+  border: none;
+  background-color: #757171;
+  padding: 40px 40px;
+  border-radius: 23px;
+  position: relative;
+}
+
+#pop-btn::before,
+#pop-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#pop-btn::before {
+  position: absolute;
+  left: 104px;
+  width: 100%;
+  border-radius: 23px;
+  box-shadow: -20px 3px 9px 6px #292a2c;
+  overflow: hidden;
+}
+
+#pop-btn::after {
+  position: absolute;
+  left: -102px;
+  width: 100%;
+  border-radius: 23px;
+  box-shadow: 20px 3px 9px 6px #292a2c;
+}
+
+#inner-btn {
+  border: 2px solid #474747f2;
+  background-color: #5e6060;
+  border-radius: 23px;
+  padding: 17px 20px;
+  position: absolute;
+  box-shadow: inset 0px 20px 14px 4px #252527ba;
+  cursor: pointer;
+  position: fixed;
+}
+
+#inner-btn::before,
+#inner-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#inner-btn::before {
+  position: absolute;
+  width: 88px;
+  height: 53px;
+  box-shadow: -7px 20px 9px 6px #292a2c94;
+  border-radius: 16%;
+  top: -79px;
+}
+
+#inner-btn::after {
+  position: absolute;
+  width: 106px;
+  height: 14px;
+  box-shadow: 1px 19px 9px 6px #1d1d1d;
+  border-radius: 23%;
+  top: 105px;
+  rotate: 178deg;
+  left: -12px;
+}
+
+/* ================================== */
+
+#dot {
+  padding: 4px;
+  background: #5edeeb;
+  border-radius: 100%;
+  margin-top: 10px;
+  box-shadow: -20px -4px 20px 3px rgb(5 38 163 / 60%);
+  position: relative;
+}
+
+#dot::before,
+#dot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#dot::before {
+  width: 10px;
+  box-shadow: 2px 6px 20px 1px #062db6;
+}
+#dot::after {
+  box-shadow: 2px -17px 20px 3px #062db6;
+}
